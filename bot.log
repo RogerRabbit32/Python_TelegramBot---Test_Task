@@ -1,0 +1,155 @@
+2023-06-19 14:55:30,435 - root - INFO - User: 592681473 levin_kirill Received message: �������� ��� ���
+2023-06-19 14:55:51,316 - root - INFO - User: 592681473 levin_kirill Received message: And such?
+2023-06-19 14:57:12,074 - root - INFO - API request triggered by user 592681473 levin_kirill (success)
+2023-06-19 14:57:14,828 - root - INFO - User: 592681473 levin_kirill Received message: api
+2023-06-19 17:16:29,478 - root - ERROR - Error connecting to the database: 
+2023-06-19 17:20:33,016 - root - ERROR - Error connecting to the database: 
+2023-06-19 17:24:43,164 - root - ERROR - Error connecting to the database: 
+2023-06-19 18:33:13,982 - root - ERROR - Error connecting to the database: 
+2023-06-19 18:35:37,265 - root - ERROR - Error connecting to the database: 
+2023-06-19 18:36:26,492 - root - ERROR - Error connecting to the database: 
+2023-06-19 19:18:21,966 - root - ERROR - Error connecting to the database: 
+2023-06-19 19:21:38,742 - root - ERROR - Error connecting to the database: 
+2023-06-19 19:26:15,846 - root - ERROR - Error connecting to the database: connection to server at "172.17.0.2", port 5432 failed: Connection timed out (0x0000274C/10060)
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-06-19 19:29:25,784 - root - ERROR - Error connecting to the database: connection to server at "0.0.0.0", port 5432 failed: Cannot assign requested address (0x00002741/10049)
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-06-19 19:41:53,140 - root - ERROR - Error connecting to the database: connection to server at "172.17.0.2", port 5432 failed: Connection timed out (0x0000274C/10060)
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-06-19 19:42:54,977 - root - ERROR - Error connecting to the database: 
+2023-06-19 19:46:10,780 - root - ERROR - Error connecting to the database: 
+2023-06-19 19:53:09,245 - root - ERROR - Error connecting to the database: (psycopg2.OperationalError) 
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-06-19 20:02:27,262 - root - ERROR - Error connecting to the database: (psycopg2.OperationalError) connection to server at "172.17.0.2", port 5432 failed: Connection timed out (0x0000274C/10060)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-06-19 20:04:05,455 - root - ERROR - Error connecting to the database: (psycopg2.OperationalError) connection to server at "172.17.0.2", port 5432 failed: Connection timed out (0x0000274C/10060)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-06-19 20:05:21,371 - root - ERROR - Error connecting to the database: (psycopg2.OperationalError) 
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-06-19 20:05:49,806 - root - ERROR - Error connecting to the database: (psycopg2.OperationalError) connection to server at "0.0.0.0", port 5432 failed: Cannot assign requested address (0x00002741/10049)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-06-19 20:46:04,232 - root - ERROR - Error connecting to the database: 
+2023-06-19 20:50:19,351 - root - ERROR - Error connecting to the database: 
+2023-06-19 20:55:31,694 - root - ERROR - Error connecting to the database: connection to server at "172.21.52.228", port 5432 failed: FATAL:  no pg_hba.conf entry for host "172.21.48.1", user "postgres", database "postgres", SSL encryption
+connection to server at "172.21.52.228", port 5432 failed: FATAL:  no pg_hba.conf entry for host "172.21.48.1", user "postgres", database "postgres", no encryption
+
+2023-06-19 21:04:58,442 - root - INFO - Successfully connected to the database
+2023-06-19 21:04:58,513 - root - INFO - User messages table created successfully
+2023-06-19 21:12:31,297 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message text is empty
+2023-06-19 21:12:31,298 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\79523\PycharmProjects\Unicorn_TestBot\venv\lib\site-packages\telebot\__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\79523\PycharmProjects\Unicorn_TestBot\venv\lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\79523\PycharmProjects\Unicorn_TestBot\venv\lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\79523\PycharmProjects\Unicorn_TestBot\venv\lib\site-packages\telebot\__init__.py", line 6770, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "C:\Users\79523\PycharmProjects\Unicorn_TestBot\main.py", line 52, in handle_profile_command
+    bot.send_message(message.chat.id, user_messages)
+  File "C:\Users\79523\PycharmProjects\Unicorn_TestBot\venv\lib\site-packages\telebot\__init__.py", line 1549, in send_message
+    apihelper.send_message(
+  File "C:\Users\79523\PycharmProjects\Unicorn_TestBot\venv\lib\site-packages\telebot\apihelper.py", line 264, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\79523\PycharmProjects\Unicorn_TestBot\venv\lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\79523\PycharmProjects\Unicorn_TestBot\venv\lib\site-packages\telebot\apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message text is empty
+
+2023-06-19 21:14:06,605 - root - INFO - Successfully connected to the database
+2023-06-19 21:14:06,609 - root - INFO - User messages table created successfully
+2023-06-19 21:14:28,901 - root - INFO - User: 592681473 levin_kirill Received message: How about now?
+2023-06-19 21:14:29,084 - root - ERROR - Error updating user messages: syntax error at or near "592681473"
+LINE 1: ...ser_messages (user_id, user_name, message) VALUES 592681473,...
+                                                             ^
+
+2023-06-19 21:14:31,723 - root - ERROR - Error retrieving user profile: current transaction is aborted, commands ignored until end of transaction block
+
+2023-06-19 21:23:25,030 - root - INFO - Successfully connected to the database
+2023-06-19 21:23:25,035 - root - INFO - User messages table created successfully
+2023-06-19 21:24:27,030 - root - INFO - User: 592681473 levin_kirill Received message: Hi baby!
+2023-06-19 21:27:37,254 - root - INFO - Successfully connected to the database
+2023-06-19 21:27:37,260 - root - INFO - User messages table created successfully
+2023-06-19 21:29:32,188 - root - INFO - Successfully connected to the database
+2023-06-19 21:29:32,189 - root - INFO - User messages table created successfully
+2023-06-19 21:30:56,197 - root - INFO - Successfully connected to the database
+2023-06-19 21:30:56,199 - root - INFO - User messages table created successfully
+2023-06-19 21:31:51,359 - root - INFO - User: 592681473 levin_kirill Received message: I want more messages
+2023-06-19 21:31:51,600 - root - ERROR - Error updating user messages: duplicate key value violates unique constraint "user_messages_pkey"
+DETAIL:  Key (user_id)=(592681473) already exists.
+
+2023-06-19 21:56:03,277 - root - INFO - Successfully connected to the database
+2023-06-19 21:56:03,351 - root - INFO - User messages table created successfully
+2023-06-19 21:58:18,285 - root - INFO - Successfully connected to the database
+2023-06-19 21:58:18,289 - root - INFO - User messages table created successfully
+2023-06-20 13:09:53,324 - root - INFO - Successfully connected to the database
+2023-06-20 13:09:53,369 - root - INFO - DB tables created successfully
+2023-06-20 13:50:53,874 - root - INFO - Successfully connected to the database
+2023-06-20 13:50:53,890 - root - INFO - DB tables created successfully
+2023-06-20 13:51:28,726 - root - INFO - User: 592681473 levin_kirill Received message: Hi man!
+2023-06-20 13:51:28,762 - root - INFO - Successfully created new user profile 592681473 levin_kirill
+2023-06-20 13:51:44,895 - root - INFO - User: 592681473 levin_kirill Received message: another message
+2023-06-20 13:52:00,528 - root - INFO - User: 592681473 levin_kirill Received message: and just to make sure
+2023-06-20 14:05:21,810 - root - INFO - Successfully connected to the database
+2023-06-20 14:05:21,865 - root - INFO - DB tables created successfully
+2023-06-20 14:06:01,320 - root - INFO - User: 592681473 levin_kirill Received message: Are you still there?
+2023-06-20 14:09:10,888 - root - INFO - Successfully connected to the database
+2023-06-20 14:09:10,892 - root - INFO - DB tables created successfully
+2023-06-20 14:09:27,062 - root - INFO - User: 592681473 levin_kirill Received message: And now?
+2023-06-20 14:09:56,229 - root - INFO - User: 592681473 levin_kirill Received message: and STIIIIL!!
+2023-06-20 14:10:04,670 - root - INFO - User: 592681473 levin_kirill Received message: the undisputed king of the middleweights
+2023-06-20 14:10:12,086 - root - INFO - User: 592681473 levin_kirill Received message: ISRAEEEEL ADESAAANYAA!!!
+2023-06-20 14:27:32,373 - root - INFO - Successfully connected to the database
+2023-06-20 14:27:32,379 - root - INFO - DB tables created successfully
+2023-06-20 14:29:55,072 - root - INFO - Successfully connected to the database
+2023-06-20 14:29:55,079 - root - INFO - DB tables created successfully
+2023-06-20 14:31:41,000 - root - INFO - Successfully connected to the database
+2023-06-20 14:31:41,003 - root - INFO - DB tables created successfully
+2023-06-21 15:41:02,984 - root - INFO - Successfully connected to the database
+2023-06-21 15:41:03,004 - root - INFO - DB tables created successfully
+2023-06-21 15:42:26,722 - root - INFO - Successfully connected to the database
+2023-06-21 15:42:26,727 - root - INFO - DB tables created successfully
+2023-06-21 15:44:33,336 - root - INFO - Successfully connected to the database
+2023-06-21 15:44:33,340 - root - INFO - DB tables created successfully
+2023-06-21 13:06:45,603 - root - ERROR - Error connecting to the database: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-06-21 13:38:47,701 - root - ERROR - Error retrieving user messages with username: 'NoneType' object has no attribute 'cursor'
+2023-06-21 13:38:56,851 - root - INFO - User: 592681473 levin_kirill Received message: Hi there!
+2023-06-21 13:38:56,855 - root - ERROR - Error inserting new user 592681473 levin_kirill profile: 'NoneType' object has no attribute 'cursor'
+2023-06-21 13:38:56,855 - root - ERROR - Error inserting message: 'NoneType' object has no attribute 'cursor'
+2023-06-21 13:39:03,058 - root - INFO - User: 592681473 levin_kirill Received message: How are you doing?
+2023-06-21 13:39:03,061 - root - ERROR - Error inserting new user 592681473 levin_kirill profile: 'NoneType' object has no attribute 'cursor'
+2023-06-21 13:39:03,063 - root - ERROR - Error inserting message: 'NoneType' object has no attribute 'cursor'
+2023-06-21 13:39:08,036 - root - INFO - API request triggered by user 592681473 levin_kirill (success)
+2023-06-21 13:39:11,900 - root - ERROR - Error retrieving user messages with username: 'NoneType' object has no attribute 'cursor'
+2023-06-21 13:39:21,685 - root - ERROR - Error retrieving user messages with username: 'NoneType' object has no attribute 'cursor'
+2023-06-21 13:41:04,290 - root - INFO - User: 592681473 levin_kirill Received message: Still there?
+2023-06-21 13:41:04,293 - root - ERROR - Error inserting new user 592681473 levin_kirill profile: 'NoneType' object has no attribute 'cursor'
+2023-06-21 13:41:04,295 - root - ERROR - Error inserting message: 'NoneType' object has no attribute 'cursor'
+2023-06-21 13:41:17,271 - root - ERROR - Error retrieving user messages with username: 'NoneType' object has no attribute 'cursor'
+2023-06-21 13:50:48,911 - root - INFO - Successfully connected to the database
+2023-06-21 13:50:49,113 - root - INFO - DB tables created successfully
+2023-06-21 13:51:25,389 - root - INFO - User: 592681473 levin_kirill Received message: My new message
+2023-06-21 13:51:25,512 - root - INFO - Successfully created new user profile 592681473 levin_kirill
+2023-06-21 13:51:37,068 - root - INFO - User: 592681473 levin_kirill Received message: One more message
+2023-06-21 13:51:47,407 - root - INFO - User: 592681473 levin_kirill Received message: Сообщение по-русски
+2023-06-21 13:51:54,444 - root - INFO - API request triggered by user 592681473 levin_kirill (success)
+2023-06-21 13:52:00,322 - root - INFO - API request triggered by user 592681473 levin_kirill (success)
+2023-06-21 13:52:43,874 - root - INFO - Successfully connected to the database
+2023-06-21 13:52:43,882 - root - INFO - DB tables created successfully
+2023-06-21 13:52:51,387 - root - INFO - User: 592681473 levin_kirill Received message: Сохранены ли сообщения?
+2023-06-21 13:52:59,914 - root - INFO - User: 592681473 levin_kirill Received message: 😃

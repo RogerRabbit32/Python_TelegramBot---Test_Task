@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  bot:
+    build:
+      context: .
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_NAME=postgres
+    command: python main.py
+
+  db:
+    image: postgres
+    restart: always
+    volumes:
+      - ./data:/var/lib/postgresql/data
