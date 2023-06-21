@@ -18,4 +18,4 @@ To launch the project, run the command
 
 <code>docker-compose up</code>
 
-The project utilizes Docker volumes, so there should be no DB data losses
+The project utilizes Docker volumes, so there should be no DB data losses.
